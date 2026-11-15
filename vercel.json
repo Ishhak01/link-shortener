@@ -1,13 +1,4 @@
 {
   "framework": "express",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".",
-  "routes": {
-    "/api/*": {
-      "methods": ["GET", "POST", "PUT", "DELETE"],
-      "headers": ["*"],
-      "proxy": "https://scducnrzhvfvcoecowzr.supabase.co"
-    },
-    "/": "200"
-  }
+  "buildCommand": "npm run build"
 }
