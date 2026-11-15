@@ -6,11 +6,10 @@ const port = process.env.PORT || 3000;
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Initialize Supabase client
-// Replace with your own Supabase credentials
+// Initialize Supabase client with YOUR provided credentials
 const supabase = createClient(
-  'https://YOUR_PROJECT_ID.supabase.co', // Your Supabase Project URL
-  'YOUR_PUBLIC_ANON_KEY'                 // Your Supabase anon key
+  'https://scducnrzhvfvcoecowzr.supabase.co', // Your Supabase Project URL
+  'sb_publishable_OPhrylgdu4B7_AvfG7yagQ_rY9qVYQu' // Your Supabase anon key
 );
 
 // In-memory fallback database (used until Supabase connection is established)
